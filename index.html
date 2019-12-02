@@ -1,1 +1,54 @@
-hello word
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, intial-scale=1">
+	<style type="text/css">body, html{
+	height: 100%;
+	margin: 0;
+}
+.bg{
+	background-image: url("comp.jpg");
+	
+	height: 100%;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.button {
+     width: 150px;
+	 margin: -20px -50px; 
+	 position:relative;
+     top:50%; 
+     left:50%;
+	 display: inline-block;
+     border:none;
+     border:solid 2px white;
+     border-radius: 5px;
+     background: rgba(255, 255, 255,0);
+     font-size: 20px;
+	 color: white;
+	 font-family: 'verdana';
+	 text-align: center;
+	 
+}
+
+.button:hover{
+     background:white;
+     color:black; 
+}
+	</style>
+</head>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
+<body>
+<div class="bg">
+<div class="button"><span style="font-family:tahoma,geneva,sans-serif;">ENTER</span></div>
+</div>
+<div id="like_button_container"></div>
+</body>
+</html>
