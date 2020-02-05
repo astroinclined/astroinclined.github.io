@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<style>/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #f1f1f100;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}</style>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">CompanyLogo</a>
+        <div class="header-right">
+          <a class="active" href="#home">Home</a> 
+          <a href="#about">About</a>
+    </div>
+    </div>
+    <div class="w3-display-container">
+      <img src="blc.jpg" alt="Lights">
+      <div class="w3-display-topleft w3-container">Top Left</div>
+      <div class="w3-display-topright w3-container">Top Right</div>
+      <div class="w3-display-bottomleft w3-container">Bottom Left</div>
+      <div class="w3-display-bottomright w3-container">Bottom Right</div>
+      <div class="w3-display-left w3-container">Left</div>
+      <div class="w3-display-right w3-container">Right</div>
+      <div class="w3-display-middle w3-large">Middle</div>
+      <div class="w3-display-topmiddle w3-container">Top Middle</div>
+      <div class="w3-display-bottommiddle w3-container">Bottom Middle</div>
+    </div>
+</body>
+</html>
