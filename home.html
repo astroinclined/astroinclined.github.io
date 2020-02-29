@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Home</title>
+    <link rel="icon" href="source/moon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -29,6 +31,7 @@
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Change the background color on mouse-over */
@@ -47,6 +50,15 @@
 .header-right {
   float: right;
 }
+img
+{
+  max-width: 100%;
+  max-height: 100%;
+  border: 0px;
+  margin: 0px;
+  float: left;
+}
+
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
@@ -61,23 +73,18 @@
 }</style>
 <body>
     <div class="header">
-        <a href="#default" class="logo">CompanyLogo</a>
+        <a href="index.html" class="logo">Lonely Company</a>
         <div class="header-right">
           <a class="active" href="#home">Home</a> 
-          <a href="#about">About</a>
+          <a  href= "https://github.com/astroinclined"</a>
+          <a href="https://github.com/astroinclined">Github</a>
     </div>
     </div>
-    <div class="w3-display-container">
-      <img src="blc.jpg" alt="Lights">
-      <div class="w3-display-topleft w3-container">Top Left</div>
-      <div class="w3-display-topright w3-container">Top Right</div>
-      <div class="w3-display-bottomleft w3-container">Bottom Left</div>
-      <div class="w3-display-bottomright w3-container">Bottom Right</div>
-      <div class="w3-display-left w3-container">Left</div>
-      <div class="w3-display-right w3-container">Right</div>
-      <div class="w3-display-middle w3-large">Middle</div>
-      <div class="w3-display-topmiddle w3-container">Top Middle</div>
-      <div class="w3-display-bottommiddle w3-container">Bottom Middle</div>
+    <div class="w3-display-container"  >
+      <img src="source/amazingquality.jpg" alt="Lights">
+      <img src="source/blc.jpg" alt="Lights">
+
     </div>
+    
 </body>
 </html>
