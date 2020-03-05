@@ -49,6 +49,8 @@
 /* Float the link section to the right */
 .header-right {
   float: right;
+  margin: 0;
+  padding:  0 ;
 }
 img
 {
@@ -57,35 +59,39 @@ img
   border: 0px;
   margin: 0px;
   float: left;
+  border: 0px;
+  padding-left: 0%;
+
 
 }
-
-
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
-    float: none;
+    float: right;
     display: block;
     text-align: left;
+
   }
   .header-right {
-    float: none;
+    float: right;
   }
 }</style>
-<body>
-    <div class="header">
+<body style="margin:0; padding:0">
+    <div class="header" >
         <a href="index.html" class="logo">Lonely Company</a>
         <div class="header-right">
-          <a class="active" href="#home">Home</a> 
-          <a  href= "https://github.com/astroinclined"</a>
+          <a class="active" href="#home">HOME</a> 
+          <a  href= "https://github.com/astroinclined"></a>
           <a href="https://github.com/astroinclined">Github</a>
     </div>
     </div>
-    <div class="w3-display-container"  >
-      <img src="source/amazingquality.jpg" alt="Lights">
+    <div style="padding-left: 0%;">
+      <img src="source/moraine.jpg" style="margin-left: 0px;" alt="Lights">
+      <img src="source/amazingquality.jpg" style="margin-left: 0px;" alt="Lights">
       <img src="source/blc.jpg" alt="Lights">
-
     </div>
+
+
     
 </body>
 </html>
